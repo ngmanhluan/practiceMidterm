@@ -76,9 +76,9 @@
                     <div class="col-lg-7 col-md-7">
                         <div class="advanced-search">
                             <button type="button" class="category-btn">All Categories</button>
-                            <form action="#" class="input-group">
-                                <input type="text" placeholder="What do you need?">
-                                <button type="button"><i class="ti-search"></i></button>
+                            <form action="search.php" method="POST" class="input-group">
+                                <input type="text" name="name-product" placeholder="What do you need?">
+                                <button type="submit"><i class="ti-search"></i></button>
                             </form>
                         </div>
                     </div>

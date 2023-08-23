@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 require_once('./model/connect.php');
 $render = "";
@@ -371,24 +370,4 @@ if (isset($_POST['name-product'])) {
 </body>
 
 </html>
-=======
-<?php require_once('./model/connect.php'); ?>
-<?php 
-$searchInput = $_POST['searchInput'];
 
-$query = "SELECT * FROM products WHERE `name` LIKE '%$searchInput%'";
-$result = mysqli_query($conn, $query);
-
-if ($result) {
-    if (mysqli_num_rows($result) > 0) {
-        while ($row = mysqli_fetch_assoc($result)) {
-            echo '<p>'.$row['name'].'</p>';
-        }
-    } else {
-        echo 'No results found.';
-    }
-} else {
-    echo 'Query error: ' . mysqli_error($conn);
-}
-?>
->>>>>>> 62af39b44b2285edad83342b510da7298d876bb3

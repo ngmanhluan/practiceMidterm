@@ -74,7 +74,6 @@
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-7">
-<<<<<<< HEAD
                         <div class="advanced-search">
                             <button type="button" class="category-btn">All Categories</button>
                             <form action="search.php" method="POST" class="input-group">
@@ -83,39 +82,6 @@
                             </form>
                         </div>
                     </div>
-=======
-    <div class="advanced-search">
-        <button type="button" class="category-btn">All Categories</button>
-        <form action="search.php" method="POST"  class="input-group">
-            <input type="text" id="search-input" name="searchInput" placeholder="What do you need?">
-            <button type="button" onclick="search()">Search</button>
-        </form>
-    </div>
-</div>
-
-<div id="search-results">
-    <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
-</div>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-    function search() {
-        var searchInput = document.getElementById("search-input").value;
-        
-        // Kiểm tra xem người dùng đã nhập từ khóa tìm kiếm hay chưa
-        if (searchInput !== '') {
-            $.ajax({
-                url: 'search.php', // Đường dẫn đến file PHP xử lý tìm kiếm
-                type: 'POST',
-                data: {searchInput: searchInput},
-                success: function(response) {
-                    $('#search-results').html(response);
-                }
-            });
-        }
-    }
-</script>
->>>>>>> 62af39b44b2285edad83342b510da7298d876bb3
                     <div class="col-lg-3 text-right col-md-3">
                         <ul class="nav-right">
                             <li class="heart-icon"><a href="#">
